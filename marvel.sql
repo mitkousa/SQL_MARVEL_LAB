@@ -84,8 +84,9 @@ UPDATE movies SET show_time = '20:45' where title = 'Iron Man 3';
 SELECT * FROM movies ORDER BY show_time ASC;
 
 -- - Count the number of films released in each year (will need to research GROUP BY)
+SELECT year, COUNT(*) FROM movies GROUP BY year;
 
-
+-- Research how to delete multiple entries from your table in a single command.
 DELETE FROM movies WHERE (title = 'Thor') OR (title = 'Ant-Man');
 
 -- SELECT * FROM movies;
