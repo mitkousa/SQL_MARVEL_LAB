@@ -80,6 +80,12 @@ INSERT INTO movies (title) VALUES ('Avengers: Infinity War');
 SELECT show_time FROM movies WHERE title = 'Iron Man 2';
 UPDATE movies SET show_time = '20:45' where title = 'Iron Man 3';
 
+-- - Return all of the films ordered by start time (will need to research ORDER BY)
+SELECT * FROM movies ORDER BY show_time ASC;
+
+-- - Count the number of films released in each year (will need to research GROUP BY)
+
+
 DELETE FROM movies WHERE (title = 'Thor') OR (title = 'Ant-Man');
 
-SELECT * FROM movies;
+-- SELECT * FROM movies;
